@@ -1,42 +1,26 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import styles from './Navbar.module.css';
 
-export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          <span className="logo-text">Memoria</span>
-        </Link>
-
-        <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-          <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-            Home
-          </Link>
-          <Link to="/privacy-policy" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-            Privacy Policy
-          </Link>
-          <Link to="/terms-and-conditions" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-            Terms & Conditions
-          </Link>
-          <Link to="/contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-            Contact
+    <header className={styles.header}>
+      <nav className={`${styles.navbar} glass-effect`}>
+        <div className={styles.logoContainer}>
+          <Link to="/" className={styles.logo}>
+            MEMORIA
           </Link>
         </div>
-
-        <button className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-        </button>
-      </div>
-    </nav>
+        <ul className={styles.navLinks}>
+          <li><Link to="/" className={styles.navLink}>Home</Link></li>
+          <li><Link to="/#download" className={styles.navLink}>Download</Link></li>
+          <li><Link to="/privacy-policy" className={styles.navLink}>Privacy Policy</Link></li>
+          <li><Link to="/terms-and-conditions" className={styles.navLink}>Terms</Link></li>
+          <li><Link to="/about-developer" className={styles.navLink}>About</Link></li>
+          <li><Link to="/contact" className={styles.navLink}>Contact</Link></li>
+        </ul>
+      </nav>
+    </header>
   );
-}
+};
+
+export default Navbar;

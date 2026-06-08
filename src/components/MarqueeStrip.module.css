@@ -1,0 +1,42 @@
+.marqueeContainer {
+  width: 100%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: var(--spacing-lg) 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--color-gray-800);
+  border-bottom: 1px solid var(--color-gray-800);
+}
+
+.marqueeContent {
+  display: inline-block;
+  animation: scrollMarquee 40s linear infinite;
+}
+
+/* Pause animation on hover for better UX if needed, though pure decor is fine without */
+.marqueeContainer:hover .marqueeContent {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marqueeItem {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.separator {
+  margin: 0 var(--spacing-lg);
+  font-size: 1rem;
+  color: var(--color-gray-400);
+}

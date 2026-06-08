@@ -1,0 +1,106 @@
+.heroSection {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: var(--spacing-xxl); /* To account for fixed navbar */
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--color-gray-800);
+  margin: 0;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Decorative Blobs */
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: var(--color-gray-200);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 1;
+  opacity: 0.5;
+  animation: pulse 8s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.1) translate(20px, -20px); }
+}
+
+/* Floating Elements (Open Peeps placeholders) */
+.floatingElement {
+  position: absolute;
+  z-index: 5;
+  animation: float 6s ease-in-out infinite;
+}
+
+.float1 {
+  top: 25%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.float2 {
+  bottom: 30%;
+  right: 25%;
+  animation-delay: 3s;
+}
+
+.peepPlaceholder {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floatingElement {
+    display: none; /* Hide on small screens to prevent clutter */
+  }
+}

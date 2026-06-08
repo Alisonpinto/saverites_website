@@ -1,0 +1,77 @@
+.pageSection {
+  padding-top: calc(var(--spacing-xxl) + 60px); /* Account for fixed navbar */
+  padding-bottom: var(--spacing-xxl);
+  min-height: 80vh;
+}
+
+.pageHeader {
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  color: var(--color-gray-800);
+  line-height: 1.8;
+}
+
+.content h2 {
+  color: var(--color-black);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.content p {
+  margin-bottom: var(--spacing-md);
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.content li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--border-radius-sm);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--color-black);
+}
+
+.submitBtn {
+  width: 100%;
+}
