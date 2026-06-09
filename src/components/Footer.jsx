@@ -35,6 +35,8 @@ const Footer = () => {
           <Link to="/" className={styles.link}>Home</Link>
           <Link to="/privacy-policy" className={styles.link}>Privacy Policy</Link>
           <Link to="/terms-and-conditions" className={styles.link}>Terms & Conditions</Link>
+          <Link to="/community-guidelines" className={styles.link}>Community Guidelines</Link>
+          <Link to="/account-deletion-policy" className={styles.link}>Account Deletion</Link>
           <Link to="/about-developer" className={styles.link}>About Developer</Link>
           <Link to="/contact" className={styles.link}>Contact</Link>
         </nav>

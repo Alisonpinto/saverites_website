@@ -7,13 +7,7 @@ const Hero = () => {
       <div className={styles.blob} style={{ top: '10%', left: '15%' }}></div>
       <div className={styles.blob} style={{ top: '40%', right: '10%', animationDelay: '2s' }}></div>
       
-      {/* Floating Elements / "Open Peeps" placeholders */}
-      <div className={`${styles.floatingElement} ${styles.float1}`}>
-         <div className={styles.peepPlaceholder}>✨</div>
-      </div>
-      <div className={`${styles.floatingElement} ${styles.float2}`}>
-         <div className={styles.peepPlaceholder}>📸</div>
-      </div>
+
 
       <div className={`container ${styles.content}`}>
         <h1 className={`h1 animate-fade-up ${styles.title}`}>MEMORIA</h1>
