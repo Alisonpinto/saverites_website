@@ -26,7 +26,7 @@ const AccountDeletionPolicy = () => {
           If account deletion is unavailable within the application, users may request deletion by contacting:
         </p>
         <p>
-          Email: <a href="mailto:memoria2026@gmail.com">memoria2027@gmail.com</a>
+          Email: <a href="mailto:memoria2026@gmail.com">memoria2027alion@gmail.com</a>
         </p>
 
         <h2>What Happens After Deletion</h2>
