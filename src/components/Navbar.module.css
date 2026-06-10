@@ -140,13 +140,150 @@
   color: var(--color-black);
 }
 
+.hamburger {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navLinks {
-    display: none; /* In a full app, this would be a hamburger menu */
+    display: none;
   }
   
   .navbar {
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 150;
+  }
+
+  .bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-black);
+    border-radius: var(--border-radius-full);
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+  }
+
+  .hamburgerActive .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburgerActive .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburgerActive .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .mobileMenu {
+    display: block;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-lg) var(--spacing-md);
+    z-index: 120;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .mobileMenuVisible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .mobileNavLink {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-gray-800);
+    transition: color var(--transition-fast);
+    display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 0.4rem;
+    background: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    padding: var(--spacing-sm) 0;
+  }
+
+  .mobileNavLink:hover {
+    color: var(--color-black);
+  }
+  
+  .mobileDropdownContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobileDropdownMenu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-fast) ease-out, margin var(--transition-fast) ease-out;
+    align-items: center;
+  }
+
+  .mobileDropdownVisible {
+    max-height: 200px;
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .mobileDropdownLink {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-gray-800);
+    padding: var(--spacing-xs) 0;
+    transition: color var(--transition-fast);
+    text-decoration: none;
+  }
+
+  .mobileDropdownLink:hover {
+    color: var(--color-black);
   }
 }
+

@@ -10,12 +10,26 @@ const FeatureSection = ({ title, description, reverse, type, listItems }) => {
           {type === 'phone' ? (
             <div className={styles.phoneMockup}>
               <div className={styles.phoneScreen}>
-                <span className={styles.placeholderText}>App Screenshot Placeholder</span>
+                <video 
+                  className={styles.mockupVideo}
+                  src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
               </div>
             </div>
           ) : (
             <div className={styles.videoMockup}>
-              <span className={styles.placeholderText}>Figma Demo Video Placeholder</span>
+              <video 
+                className={styles.mockupVideo}
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
             </div>
           )}
         </div>

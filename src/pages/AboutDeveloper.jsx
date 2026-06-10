@@ -6,34 +6,42 @@ const AboutDeveloper = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const team = [
+    { name: 'Alison Pinto', gradient: 'linear-gradient(135deg, #FF5E62 0%, #FF9966 100%)' },
+    { name: 'Abhishek Kulbainur', gradient: 'linear-gradient(135deg, #00C6FF 0%, #0072FF 100%)' },
+    { name: 'Jawaan Santh', gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)' },
+    { name: 'Aiden Rodrigues', gradient: 'linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)' }
+  ];
+
   return (
     <div className={`container ${styles.pageSection}`}>
       <div className={styles.pageHeader}>
-        <h1 className="h1">About the Developer</h1>
-        <p className="p-large">Meet the creator behind Memoria</p>
+        <h1 className="h1">About the Developers</h1>
+        <p className="p-large">Meet the creators behind Memoria</p>
       </div>
-      
-      <div className={styles.content} style={{ textAlign: 'center' }}>
-        <div style={{ 
-          width: '150px', 
-          height: '150px', 
-          backgroundColor: 'var(--color-gray-200)', 
-          borderRadius: '50%', 
-          margin: '0 auto var(--spacing-lg)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: '3rem'
-        }}>
-          👩‍💻
+
+      <div className={styles.content}>
+        <div className={styles.teamGrid}>
+          {team.map((member, index) => (
+            <div
+              key={index}
+              className={styles.teamCard}
+              style={{ '--hover-gradient': member.gradient }}
+            >
+              <h3 className={styles.teamName}>
+                {member.name.split(/\s+/).map((part, idx) => (
+                  <span key={idx} className={styles.namePart}>{part}</span>
+                ))}
+              </h3>
+            </div>
+          ))}
         </div>
-        <h2>Alison Pinto</h2>
-        <p>Lead Engineer & Designer</p>
-        <p style={{ maxWidth: '600px', margin: 'var(--spacing-md) auto' }}>
-          Hi! I'm Alison. I built Memoria because I wanted a beautiful, private, and organized space to keep all the things that matter most. No ads, no clutter, just your memories safely stored.
-        </p>
-        <div style={{ marginTop: 'var(--spacing-xl)' }}>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="btn btn-secondary">View GitHub</a>
+
+        <div className={styles.emailSection}>
+          <span className={styles.emailTitle}>Get in Touch</span>
+          <a href="mailto:memoria@gmail.com" className={styles.emailLink}>
+            memoria@gmail.com
+          </a>
         </div>
       </div>
     </div>
@@ -41,3 +49,6 @@ const AboutDeveloper = () => {
 };
 
 export default AboutDeveloper;
+
+
+
