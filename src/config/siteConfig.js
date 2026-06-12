@@ -37,16 +37,16 @@ export const siteConfig = {
  */
 export const apkConfig = {
   // The filename of the APK file in the "/public/downloads/" folder.
-  fileName: 'memoria.apk',
+  fileName: 'app-debug.apk',
   
   // The path relative to the root directory where the APK is served.
-  downloadPath: '/downloads/memoria.apk',
+  downloadPath: '/downloads/app-debug.apk',
   
   // App version shown on the download card.
   version: '1.0.0',
   
   // Size of the APK file, displayed to the user.
-  size: '18.4 MB',
+  size: '89.4 MB',
   
   // Date of the last release.
   lastUpdated: 'June 13, 2026',
