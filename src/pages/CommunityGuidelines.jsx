@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
 import styles from './Page.module.css';
 
 const CommunityGuidelines = () => {
@@ -7,7 +8,12 @@ const CommunityGuidelines = () => {
   }, []);
 
   return (
-    <div className={`container ${styles.pageSection}`}>
+    <section className={`container ${styles.pageSection}`}>
+      <SEO 
+        title="Community Guidelines"
+        description="Read the community standards and rules for using Memoria. Learn what content is allowed and how to report violations."
+        keywords="community guidelines, user rules, content policy, reporting abuse, memoria guidelines"
+      />
       <div className={styles.pageHeader}>
         <h1 className="h1">Community Guidelines</h1>
         <p className="p-large">Last Updated: June 2026</p>
@@ -94,7 +100,7 @@ const CommunityGuidelines = () => {
           Our goal is to maintain a safe and positive environment for all users.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

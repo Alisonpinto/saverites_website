@@ -71,6 +71,7 @@ const Navbar = () => {
           </li>
           
           <li><Link to="/about-developer" className={styles.navLink}>About</Link></li>
+          <li><Link to="/support" className={styles.navLink}>Support</Link></li>
           <li><Link to="/contact" className={styles.navLink}>Contact</Link></li>
         </ul>
 
@@ -124,6 +125,9 @@ const Navbar = () => {
             
             <li>
               <Link to="/about-developer" className={styles.mobileNavLink} onClick={closeMobileMenu}>About</Link>
+            </li>
+            <li>
+              <Link to="/support" className={styles.mobileNavLink} onClick={closeMobileMenu}>Support</Link>
             </li>
             <li>
               <Link to="/contact" className={styles.mobileNavLink} onClick={closeMobileMenu}>Contact</Link>

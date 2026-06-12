@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
 import styles from './Page.module.css';
 
 const PrivacyPolicy = () => {
@@ -7,7 +8,12 @@ const PrivacyPolicy = () => {
   }, []);
 
   return (
-    <div className={`container ${styles.pageSection}`}>
+    <section className={`container ${styles.pageSection}`}>
+      <SEO 
+        title="Privacy Policy"
+        description="Read the Privacy Policy for Memoria. Learn what information we collect, how we protect it, and your rights concerning your personal data."
+        keywords="privacy policy, data collection, user privacy, data security, firebase privacy, GDPR compliance"
+      />
       <div className={styles.pageHeader}>
         <h1 className="h1">Privacy Policy – Memoria</h1>
         <p className="p-large">Last Updated: June 2026</p>
@@ -104,7 +110,7 @@ const PrivacyPolicy = () => {
           Email: <a href="mailto:memoria2026@gmail.com">memoria2026@gmail.com</a>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

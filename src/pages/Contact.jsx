@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
 import styles from './Page.module.css';
 
 const Contact = () => {
@@ -7,7 +8,12 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className={`container ${styles.pageSection}`}>
+    <section className={`container ${styles.pageSection}`}>
+      <SEO 
+        title="Contact Us"
+        description="Get in touch with the Memoria team. Send us support inquiries, feedback, or development proposals."
+        keywords="contact memoria, support email, contact developers, contact page"
+      />
       <div className={styles.pageHeader}>
         <h1 className="h1">Contact Us</h1>
         <p className="p-large">We'd love to hear from you</p>
@@ -33,7 +39,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

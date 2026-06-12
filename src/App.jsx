@@ -13,6 +13,7 @@ import CommunityGuidelines from './pages/CommunityGuidelines';
 import AccountDeletionPolicy from './pages/AccountDeletionPolicy';
 import AboutDeveloper from './pages/AboutDeveloper';
 import Contact from './pages/Contact';
+import Support from './pages/Support';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/account-deletion-policy" element={<AccountDeletionPolicy />} />
           <Route path="/about-developer" element={<AboutDeveloper />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
       </main>
       <Footer />

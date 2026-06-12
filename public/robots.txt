@@ -1,0 +1,7 @@
+# Robots.txt file for Memoria Website
+User-agent: *
+Allow: /
+
+# Host & Sitemap Location
+Host: https://usememoria.com
+Sitemap: https://usememoria.com/sitemap.xml

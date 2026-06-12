@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
 import styles from './Page.module.css';
 
 const TermsConditions = () => {
@@ -7,7 +8,12 @@ const TermsConditions = () => {
   }, []);
 
   return (
-    <div className={`container ${styles.pageSection}`}>
+    <section className={`container ${styles.pageSection}`}>
+      <SEO 
+        title="Terms & Conditions"
+        description="Read the Terms and Conditions for using Memoria. Learn about user eligibility, account registration, acceptable use, and intellectual property."
+        keywords="terms and conditions, user agreement, legal policy, terms of service, developer contact"
+      />
       <div className={styles.pageHeader}>
         <h1 className="h1">Terms and Conditions</h1>
         <p className="p-large">Last Updated: June 2026</p>
@@ -154,7 +160,7 @@ const TermsConditions = () => {
           Email: <a href="mailto:memoria2026@gmail.com">memoria2026@gmail.com</a>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

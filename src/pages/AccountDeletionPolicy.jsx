@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
+import { Link } from 'react-router-dom';
 import styles from './Page.module.css';
 
 const AccountDeletionPolicy = () => {
@@ -7,7 +9,12 @@ const AccountDeletionPolicy = () => {
   }, []);
 
   return (
-    <div className={`container ${styles.pageSection}`}>
+    <section className={`container ${styles.pageSection}`}>
+      <SEO 
+        title="Account Deletion Policy"
+        description="Learn how to delete your Memoria account and what happens to your content, photos, and personal information after deletion."
+        keywords="delete account, delete memoria, remove profile, data deletion request"
+      />
       <div className={styles.pageHeader}>
         <h1 className="h1">Account Deletion Policy</h1>
         <p className="p-large">Last Updated: June 2026</p>
@@ -52,8 +59,11 @@ const AccountDeletionPolicy = () => {
         <p>
           <a href="mailto:memoria2026@gmail.com">memoria2026@gmail.com</a>
         </p>
+        <p style={{ marginTop: 'var(--spacing-md)' }}>
+          You can also submit a support ticket or request account deletion directly through our <Link to="/support" style={{ fontWeight: 600, textDecoration: 'underline' }}>Help & Support Center</Link>.
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
 

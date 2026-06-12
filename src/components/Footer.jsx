@@ -38,6 +38,7 @@ const Footer = () => {
           <Link to="/community-guidelines" className={styles.link}>Community Guidelines</Link>
           <Link to="/account-deletion-policy" className={styles.link}>Account Deletion</Link>
           <Link to="/about-developer" className={styles.link}>About Developer</Link>
+          <Link to="/support" className={styles.link}>Help & Support</Link>
           <Link to="/contact" className={styles.link}>Contact</Link>
         </nav>
 
