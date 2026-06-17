@@ -63,7 +63,7 @@ const DownloadSection = () => {
           {/* Information & Features Column */}
           <div className={`${styles.infoColumn} animate-fade-up`}>
             <span className={styles.badge}>Official Android App</span>
-            <h2 className="h2">Take Memoria with you everywhere</h2>
+            <h2 className="h2">Take memoria with you everywhere</h2>
             <p className="p-large">
               Access your digital safe-keep directly from your smartphone. Save links, upload documents, record audio journals, and capture your precious life memories on the go.
             </p>
