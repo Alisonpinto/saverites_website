@@ -43,13 +43,13 @@ export const apkConfig = {
   downloadPath: '/app-release.apk',
   
   // App version shown on the download card.
-  version: '1.0.0',
+  version: 'v1.0.0-beta',
   
   // Size of the APK file, displayed to the user.
-  size: '89.4 MB',
+  size: '58.63 mb',
   
   // Date of the last release.
-  lastUpdated: 'June 13, 2026',
+  lastUpdated: 'June 18, 2026',
   
   // Minimum Android OS required to run the application.
   minAndroidVersion: 'Android 8.0 (Oreo) or higher',
