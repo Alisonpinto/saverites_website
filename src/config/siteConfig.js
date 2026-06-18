@@ -36,11 +36,11 @@ export const siteConfig = {
  *    and display the updated information without you needing to edit any React code.
  */
 export const apkConfig = {
-  // The filename of the APK file in the "/public/downloads/" folder.
-  fileName: 'app-debug.apk',
+  // The filename of the APK file in the "/public/" folder.
+  fileName: 'app-release.apk',
   
   // The path relative to the root directory where the APK is served.
-  downloadPath: '/downloads/app-debug.apk',
+  downloadPath: '/app-release.apk',
   
   // App version shown on the download card.
   version: '1.0.0',
