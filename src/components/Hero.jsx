@@ -20,8 +20,7 @@ const Hero = () => {
         </p>
         
         <div className={`animate-fade-up ${styles.buttonGroup}`} style={{ animationDelay: '0.3s' }}>
-          <a href="#download" className="btn btn-primary">Download App</a>
-          <Link to="/early-access" className="btn btn-secondary">Early Access</Link>
+          <Link to="/early-access" className="btn btn-primary">Early Access</Link>
         </div>
       </div>
     </section>

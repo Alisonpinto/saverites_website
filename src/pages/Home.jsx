@@ -6,6 +6,7 @@ import MarqueeStrip from '../components/MarqueeStrip';
 import WhyMemoria from '../components/WhyMemoria';
 import DownloadSection from '../components/DownloadSection';
 import CTASection from '../components/CTASection';
+import AvatarShowcase from '../components/AvatarShowcase';
 
 const Home = () => {
   // Simple intersection observer to add animation classes on scroll
@@ -61,6 +62,9 @@ const Home = () => {
         type="video"
         reverse={true}
       />
+
+      <AvatarShowcase />
+
 
       <MarqueeStrip />
       
