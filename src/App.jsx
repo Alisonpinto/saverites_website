@@ -14,6 +14,7 @@ import AccountDeletionPolicy from './pages/AccountDeletionPolicy';
 import AboutDeveloper from './pages/AboutDeveloper';
 import Contact from './pages/Contact';
 import Support from './pages/Support';
+import EarlyAccess from './pages/EarlyAccess';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/about-developer" element={<AboutDeveloper />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/early-access" element={<EarlyAccess />} />
         </Routes>
       </main>
       <Footer />

@@ -36,6 +36,7 @@ const Navbar = () => {
         {/* Desktop links */}
         <ul className={styles.navLinks}>
           <li><Link to="/" className={styles.navLink}>Home</Link></li>
+          <li><Link to="/early-access" className={styles.navLink}>Early Access</Link></li>
           <li><Link to="/#download" className={styles.navLink}>Download</Link></li>
           
           {/* Policies Dropdown */}
@@ -91,6 +92,9 @@ const Navbar = () => {
           <ul className={styles.mobileNavLinks}>
             <li>
               <Link to="/" className={styles.mobileNavLink} onClick={closeMobileMenu}>Home</Link>
+            </li>
+            <li>
+              <Link to="/early-access" className={styles.mobileNavLink} onClick={closeMobileMenu}>Early Access</Link>
             </li>
             <li>
               <Link to="/#download" className={styles.mobileNavLink} onClick={closeMobileMenu}>Download</Link>

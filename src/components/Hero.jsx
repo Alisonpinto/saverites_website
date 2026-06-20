@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
         
         <div className={`animate-fade-up ${styles.buttonGroup}`} style={{ animationDelay: '0.3s' }}>
           <a href="#download" className="btn btn-primary">Download App</a>
-          <a href="#learn-more" className="btn btn-secondary">Learn More</a>
+          <Link to="/early-access" className="btn btn-secondary">Early Access</Link>
         </div>
       </div>
     </section>

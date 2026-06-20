@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { 
   HelpCircle, Search, User, Shield, Compass, AlertCircle, 
   ChevronDown, ChevronUp, Mail, Clock, Send, MessageSquare, 
-  Bug, ExternalLink, Star
+  Bug, ExternalLink, Star, Check
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import { siteConfig } from '../config/siteConfig';

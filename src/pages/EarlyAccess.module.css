@@ -1,0 +1,314 @@
+.pageContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.section {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.sectionTitle p {
+  color: var(--color-gray-800);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* HERO SECTION */
+.hero {
+  padding-top: calc(var(--spacing-xxl) + 60px); /* Account for navbar */
+  text-align: center;
+}
+
+.hero h1 {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-md);
+}
+
+.hero p {
+  margin: 0 auto var(--spacing-xl);
+  max-width: 600px;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius-full);
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: var(--transition-fast);
+}
+
+.primaryBtn {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 2px solid var(--color-black);
+}
+
+.primaryBtn:hover {
+  background-color: var(--color-gray-800);
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 2px solid var(--color-gray-300);
+}
+
+.secondaryBtn:hover {
+  border-color: var(--color-black);
+  background-color: var(--color-gray-100);
+}
+
+/* PROBLEM SECTION */
+.problemGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.problemCard {
+  padding: var(--spacing-lg);
+  background-color: var(--color-gray-100);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  transition: var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.problemCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.problemIcon {
+  margin-bottom: var(--spacing-sm);
+}
+
+.problemBottomText {
+  text-align: center;
+  max-width: 800px;
+  margin: var(--spacing-lg) auto 0;
+  font-weight: 500;
+}
+
+/* WHAT IS MEMORIA SECTION */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-lg);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--border-radius-md);
+  transition: var(--transition-fast);
+}
+
+.featureItem:hover {
+  border-color: var(--color-black);
+}
+
+.featureIcon {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* EARLY ACCESS FORM SECTION */
+.formSection {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xxl);
+}
+
+.formSection .sectionTitle h2,
+.formSection .sectionTitle p {
+  color: var(--color-white);
+}
+
+.formSection .sectionTitle p {
+  opacity: 0.8;
+}
+
+.waitlistForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  text-align: left;
+}
+
+.inputGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-gray-300);
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 1rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--color-gray-800);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition-fast);
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--color-white);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.inputGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submitBtn {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: var(--spacing-sm);
+  transition: var(--transition-fast);
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: var(--color-gray-200);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  background-color: #f0fdf4;
+  color: #166534;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+  font-weight: 500;
+  margin-top: var(--spacing-md);
+  border: 1px solid #bbf7d0;
+}
+
+.errorMessage {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: var(--spacing-xs);
+}
+
+/* SOCIAL PROOF COUNTER */
+.socialProof {
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background-color: var(--color-gray-100);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.counterValue {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: -0.05em;
+}
+
+.counterLabel {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-gray-800);
+}
+
+/* FEEDBACK CTA */
+.feedbackSection {
+  text-align: center;
+  padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.feedbackSection h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.feedbackSection p {
+  color: var(--color-gray-800);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .hero {
+    padding-top: calc(var(--spacing-xl) + 40px);
+  }
+
+  .ctaGroup {
+    flex-direction: column;
+  }
+  
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .formSection {
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+  }
+}

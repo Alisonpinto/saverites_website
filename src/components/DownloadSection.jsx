@@ -58,9 +58,9 @@ const DownloadSection = () => {
   return (
     <section id="download" className={`section ${styles.downloadSection}`}>
       <div className={`container ${styles.container}`}>
+        {/*
         <div className={styles.grid}>
           
-          {/* Information & Features Column */}
           <div className={`${styles.infoColumn} animate-fade-up`}>
             <span className={styles.badge}>Official Android App</span>
             <h2 className="h2">Take memoria with you everywhere</h2>
@@ -90,7 +90,6 @@ const DownloadSection = () => {
             </ul>
           </div>
 
-          {/* Download Box Column */}
           <div className={`${styles.cardColumn} animate-fade-up`} style={{ animationDelay: '0.2s' }}>
             <div className={`${styles.downloadCard} glass-effect`}>
               
@@ -106,7 +105,6 @@ const DownloadSection = () => {
                 </div>
               </div>
 
-              {/* Technical Specifications */}
               <div className={styles.specsList}>
                 <div className={styles.specItem}>
                   <div className={styles.specLabelContainer}>
@@ -141,7 +139,6 @@ const DownloadSection = () => {
                 </div>
               </div>
 
-              {/* Status & Action Area */}
               <div className={styles.actionArea}>
                 {checking ? (
                   <div className={styles.statusChecking}>
@@ -179,6 +176,18 @@ const DownloadSection = () => {
             </div>
           </div>
 
+        </div>
+        */}
+
+        {/* Coming Soon Section */}
+        <div style={{ textAlign: 'center', padding: '4rem 2rem', maxWidth: '800px', margin: '0 auto' }}>
+          <h2 className="h2" style={{ marginBottom: '1rem' }}>Take memoria with you everywhere</h2>
+          <p className="p-large" style={{ marginBottom: '2rem' }}>
+            Our Android and iOS applications are currently under development. Join the Early Access waitlist to be the first to know when they drop!
+          </p>
+          <div style={{ display: 'inline-block', padding: '0.75rem 1.5rem', backgroundColor: 'var(--color-black)', color: 'var(--color-white)', borderRadius: '999px', fontWeight: 'bold' }}>
+            Coming Soon
+          </div>
         </div>
       </div>
     </section>
