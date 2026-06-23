@@ -13,7 +13,7 @@ const EarlyAccess = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [waitlistCount, setWaitlistCount] = useState(127);
   const [hasAnimated, setHasAnimated] = useState(false);
-  
+
   const formRef = useRef(null);
   const featuresRef = useRef(null);
   const counterRef = useRef(null);
@@ -40,16 +40,16 @@ const EarlyAccess = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            
+
             const target = getTargetCount();
             const startVal = Math.max(0, target - 60);
             setWaitlistCount(startVal);
-            
+
             let current = startVal;
             const duration = 1500; // 1.5 seconds animation
             const steps = 60;
             const stepTime = Math.floor(duration / steps);
-            
+
             const animationTimer = setInterval(() => {
               current += 1;
               setWaitlistCount(current);
@@ -100,7 +100,7 @@ const EarlyAccess = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMessage('');
-    
+
     const validationError = validateForm();
     if (validationError) {
       setErrorMessage(validationError);
@@ -112,11 +112,11 @@ const EarlyAccess = () => {
 
     try {
       const endpoint = import.meta.env.VITE_GOOGLE_APPS_SCRIPT_URL;
-      
+
       if (!endpoint) {
         throw new Error('Google Apps Script URL is not configured.');
       }
-      
+
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
@@ -124,11 +124,11 @@ const EarlyAccess = () => {
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (!response.ok) throw new Error('Submission failed');
-      
+
       const data = await response.json();
-      
+
       if (data.success) {
         // On success:
         setSubmitStatus('success');
@@ -143,7 +143,7 @@ const EarlyAccess = () => {
           throw new Error(data.message || 'Server error');
         }
       }
-      
+
     } catch (error) {
       console.error("Early Access Submission Error:", error);
       setSubmitStatus('error');
@@ -161,19 +161,19 @@ const EarlyAccess = () => {
 
   return (
     <div className={styles.pageContainer}>
-      <SEO 
-        title="Early Access | Saverites" 
-        description="Join the Saverites early access waitlist. Never lose a post, product, PDF, or idea again." 
+      <SEO
+        title="Early Access | Saverites"
+        description="Join the Saverites early access waitlist. Never lose a post, product, PDF, or idea again."
       />
 
       {/* SECTION 1 - HERO */}
       <section className={`${styles.section} ${styles.hero} animate-fade-up`}>
-        <h1 className="h2">Never lose a post, product, PDF, reel, video, or idea again.</h1>
+        <h1 className="h2">Never lose a post, product, PDF, reel, video or idea again.</h1>
         <p className="p-large">
           Saverites helps you save anything from anywhere and reminds you about it later, so nothing important gets forgotten.
         </p>
         <div className={styles.ctaGroup}>
-          <button 
+          <button
             className={styles.primaryBtn}
             onClick={() => {
               trackEvent('Hero Join Early Access Clicked');
@@ -182,7 +182,7 @@ const EarlyAccess = () => {
           >
             Join Early Access
           </button>
-          <button 
+          <button
             className={styles.secondaryBtn}
             onClick={() => {
               trackEvent('Hero See How It Works Clicked');
@@ -199,7 +199,7 @@ const EarlyAccess = () => {
         <div className={styles.sectionTitle}>
           <h2 className="h2">Do you save things and never find them again?</h2>
         </div>
-        
+
         <div className={styles.problemGrid}>
           <div className={styles.problemCard}>
             <PlaySquare size={32} className={styles.problemIcon} />
@@ -232,7 +232,7 @@ const EarlyAccess = () => {
         <div className={styles.sectionTitle}>
           <h2 className="h2">One place for everything worth remembering.</h2>
         </div>
-        
+
         <div className={styles.featuresGrid}>
           <div className={styles.featureItem}>
             <ShoppingBag size={28} className={styles.featureIcon} />
@@ -279,23 +279,23 @@ const EarlyAccess = () => {
             <form className={styles.waitlistForm} onSubmit={handleSubmit}>
               <div className={styles.inputGroup}>
                 <label htmlFor="name">Full Name *</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Jane Doe"
                   disabled={isSubmitting}
                 />
               </div>
-              
+
               <div className={styles.inputGroup}>
                 <label htmlFor="email">Email Address *</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email" 
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="jane@example.com"
@@ -305,9 +305,9 @@ const EarlyAccess = () => {
 
               <div className={styles.inputGroup}>
                 <label htmlFor="reason">Why would you use Saverites? (Optional)</label>
-                <textarea 
-                  id="reason" 
-                  name="reason" 
+                <textarea
+                  id="reason"
+                  name="reason"
                   value={formData.reason}
                   onChange={handleInputChange}
                   placeholder="I want to save my online shopping finds..."
@@ -317,8 +317,8 @@ const EarlyAccess = () => {
 
               {errorMessage && <div className={styles.errorMessage}>{errorMessage}</div>}
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className={styles.submitBtn}
                 disabled={isSubmitting}
               >
