@@ -84,11 +84,20 @@
   .teamGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .emailSection {
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
 }
 
 @media (max-width: 480px) {
   .teamGrid {
     grid-template-columns: 1fr;
+  }
+  
+  .emailSection {
+    padding: var(--spacing-md) var(--spacing-sm);
   }
 }
 
@@ -109,6 +118,7 @@
               box-shadow var(--transition-fast), 
               border-color var(--transition-fast),
               background var(--transition-fast);
+  max-width: 100%;
 }
 
 .emailSection:hover {
@@ -127,11 +137,13 @@
 }
 
 .emailLink {
-  font-size: 1.6rem;
+  font-size: clamp(0.9rem, 4.8vw, 1.6rem);
   font-weight: 700;
   color: var(--color-black);
   transition: color var(--transition-fast), transform var(--transition-fast);
   display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .emailLink:hover {

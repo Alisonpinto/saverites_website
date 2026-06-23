@@ -59,7 +59,7 @@ const Home = () => {
           "Important life milestones",
           "Secured personal information"
         ]}
-        type="video"
+        type="animation"
         reverse={true}
       />
 

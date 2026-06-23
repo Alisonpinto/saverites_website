@@ -1,4 +1,6 @@
 import styles from './FeatureSection.module.css';
+import SaveAnimation from './SaveAnimation';
+import PhoneSplash from './PhoneSplash';
 
 const FeatureSection = ({ title, description, reverse, type, listItems }) => {
   return (
@@ -10,16 +12,11 @@ const FeatureSection = ({ title, description, reverse, type, listItems }) => {
           {type === 'phone' ? (
             <div className={styles.phoneMockup}>
               <div className={styles.phoneScreen}>
-                <video 
-                  className={styles.mockupVideo}
-                  src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                />
+                <PhoneSplash />
               </div>
             </div>
+          ) : type === 'animation' ? (
+            <SaveAnimation />
           ) : (
             <div className={styles.videoMockup}>
               <video 

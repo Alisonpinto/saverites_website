@@ -11,20 +11,78 @@ const EarlyAccess = () => {
     return localStorage.getItem('saverites_early_access_joined') ? 'success' : null;
   }); // 'success' | 'error' | null
   const [errorMessage, setErrorMessage] = useState('');
-  const [waitlistCount, setWaitlistCount] = useState(127); // Mocked initial count
+  const [waitlistCount, setWaitlistCount] = useState(127);
+  const [hasAnimated, setHasAnimated] = useState(false);
   
   const formRef = useRef(null);
   const featuresRef = useRef(null);
+  const counterRef = useRef(null);
+
+  const getTargetCount = () => {
+    const baseCount = 127;
+    const startDate = new Date('2026-06-01T00:00:00Z').getTime();
+    const now = Date.now();
+    const elapsedMs = Math.max(0, now - startDate);
+    // Add approximately 1 waitlist member every 2 hours
+    const dynamicIncrement = Math.floor(elapsedMs / (1000 * 60 * 60 * 2));
+    return baseCount + dynamicIncrement;
+  };
 
   useEffect(() => {
     trackEvent('Early Access Page Viewed');
-    
-    // In a real scenario, fetch the current waitlist count from Google Apps Script here
-    // fetch('YOUR_GOOGLE_APPS_SCRIPT_URL?action=getCount')
-    //   .then(res => res.json())
-    //   .then(data => setWaitlistCount(data.count))
-    //   .catch(err => console.error(err));
   }, []);
+
+  useEffect(() => {
+    if (!counterRef.current || hasAnimated) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            
+            const target = getTargetCount();
+            const startVal = Math.max(0, target - 60);
+            setWaitlistCount(startVal);
+            
+            let current = startVal;
+            const duration = 1500; // 1.5 seconds animation
+            const steps = 60;
+            const stepTime = Math.floor(duration / steps);
+            
+            const animationTimer = setInterval(() => {
+              current += 1;
+              setWaitlistCount(current);
+              if (current >= target) {
+                clearInterval(animationTimer);
+              }
+            }, stepTime);
+
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(counterRef.current);
+
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  // Live updates after initial animation
+  useEffect(() => {
+    if (!hasAnimated) return;
+
+    const liveInterval = setInterval(() => {
+      // 30% chance to increment by 1 every 10 seconds
+      if (Math.random() < 0.3) {
+        setWaitlistCount(prev => prev + 1);
+      }
+    }, 10000);
+
+    return () => clearInterval(liveInterval);
+  }, [hasAnimated]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -272,7 +330,7 @@ const EarlyAccess = () => {
       </section>
 
       {/* SECTION 5 - SOCIAL PROOF COUNTER */}
-      <section className={`${styles.socialProof} animate-fade-up`}>
+      <section ref={counterRef} className={`${styles.socialProof} animate-fade-up`}>
         <div className={styles.counterValue}>{waitlistCount}</div>
         <div className={styles.counterLabel}>People Waiting For Launch</div>
       </section>
