@@ -12,8 +12,8 @@ const AccountDeletionPolicy = () => {
     <section className={`container ${styles.pageSection}`}>
       <SEO 
         title="Account Deletion Policy"
-        description="Learn how to delete your Memoria account and what happens to your content, photos, and personal information after deletion."
-        keywords="delete account, delete memoria, remove profile, data deletion request"
+        description="Learn how to delete your Saverites account and what happens to your content, photos, and personal information after deletion."
+        keywords="delete account, delete saverites, remove profile, data deletion request"
       />
       <div className={styles.pageHeader}>
         <h1 className="h1">Account Deletion Policy</h1>
@@ -22,7 +22,7 @@ const AccountDeletionPolicy = () => {
       
       <div className={styles.content}>
         <p>
-          Users may delete their Memoria account at any time.
+          Users may delete their Saverites account at any time.
         </p>
 
         <h2>How to Delete Your Account</h2>
@@ -33,7 +33,7 @@ const AccountDeletionPolicy = () => {
           If account deletion is unavailable within the application, users may request deletion by contacting:
         </p>
         <p>
-          Email: <a href="mailto:memoriaapp2026@gmail.com">memoriaapp2026@gmail.com</a>
+          Email: <a href="mailto:saverites2026@gmail.com">saverites2026@gmail.com</a>
         </p>
 
         <h2>What Happens After Deletion</h2>
@@ -57,7 +57,7 @@ const AccountDeletionPolicy = () => {
           For questions regarding account deletion, contact:
         </p>
         <p>
-          <a href="mailto:memoriaapp2026@gmail.com">memoriaapp2026@gmail.com</a>
+          <a href="mailto:saverites2026@gmail.com">saverites2026@gmail.com</a>
         </p>
         <p style={{ marginTop: 'var(--spacing-md)' }}>
           You can also submit a support ticket or request account deletion directly through our <Link to="/support" style={{ fontWeight: 600, textDecoration: 'underline' }}>Help & Support Center</Link>.

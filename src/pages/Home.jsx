@@ -3,7 +3,7 @@ import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import FeatureSection from '../components/FeatureSection';
 import MarqueeStrip from '../components/MarqueeStrip';
-import WhyMemoria from '../components/WhyMemoria';
+import WhySaverites from '../components/WhySaverites';
 import DownloadSection from '../components/DownloadSection';
 import CTASection from '../components/CTASection';
 import AvatarShowcase from '../components/AvatarShowcase';
@@ -36,7 +36,7 @@ const Home = () => {
     <>
       <SEO 
         title="Home"
-        description="Save your memories, stories, documents, and notes forever in a secure, digital environment. Download the Memoria Android app."
+        description="Save your memories, stories, documents, and notes forever in a secure, digital environment. Download the Saverites Android app."
         keywords="digital memories, secure storage, personal notes, journal app, android download, save documents"
       />
       
@@ -68,7 +68,7 @@ const Home = () => {
 
       <MarqueeStrip />
       
-      <WhyMemoria />
+      <WhySaverites />
       
       <DownloadSection />
       

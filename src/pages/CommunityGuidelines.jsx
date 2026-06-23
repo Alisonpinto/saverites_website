@@ -11,8 +11,8 @@ const CommunityGuidelines = () => {
     <section className={`container ${styles.pageSection}`}>
       <SEO 
         title="Community Guidelines"
-        description="Read the community standards and rules for using Memoria. Learn what content is allowed and how to report violations."
-        keywords="community guidelines, user rules, content policy, reporting abuse, memoria guidelines"
+        description="Read the community standards and rules for using Saverites. Learn what content is allowed and how to report violations."
+        keywords="community guidelines, user rules, content policy, reporting abuse, saverites guidelines"
       />
       <div className={styles.pageHeader}>
         <h1 className="h1">Community Guidelines</h1>
@@ -21,7 +21,7 @@ const CommunityGuidelines = () => {
       
       <div className={styles.content}>
         <p>
-          Memoria is designed to help people save, organize, and discover content.
+          Saverites is designed to help people save, organize, and discover content.
         </p>
 
         <p>

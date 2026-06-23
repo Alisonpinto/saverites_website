@@ -8,7 +8,7 @@ const EarlyAccess = () => {
   const [formData, setFormData] = useState({ name: '', email: '', reason: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(() => {
-    return localStorage.getItem('memoria_early_access_joined') ? 'success' : null;
+    return localStorage.getItem('saverites_early_access_joined') ? 'success' : null;
   }); // 'success' | 'error' | null
   const [errorMessage, setErrorMessage] = useState('');
   const [waitlistCount, setWaitlistCount] = useState(127); // Mocked initial count
@@ -74,7 +74,7 @@ const EarlyAccess = () => {
       if (data.success) {
         // On success:
         setSubmitStatus('success');
-        localStorage.setItem('memoria_early_access_joined', 'true');
+        localStorage.setItem('saverites_early_access_joined', 'true');
         setFormData({ name: '', email: '', reason: '' }); // clear form
         setWaitlistCount(prev => prev + 1); // increment count
       } else {
@@ -104,15 +104,15 @@ const EarlyAccess = () => {
   return (
     <div className={styles.pageContainer}>
       <SEO 
-        title="Early Access | Memoria" 
-        description="Join the Memoria early access waitlist. Never lose a post, product, PDF, or idea again." 
+        title="Early Access | Saverites" 
+        description="Join the Saverites early access waitlist. Never lose a post, product, PDF, or idea again." 
       />
 
       {/* SECTION 1 - HERO */}
       <section className={`${styles.section} ${styles.hero} animate-fade-up`}>
         <h1 className="h2">Never lose a post, product, PDF, reel, video, or idea again.</h1>
         <p className="p-large">
-          Memoria helps you save anything from anywhere and reminds you about it later, so nothing important gets forgotten.
+          Saverites helps you save anything from anywhere and reminds you about it later, so nothing important gets forgotten.
         </p>
         <div className={styles.ctaGroup}>
           <button 
@@ -165,11 +165,11 @@ const EarlyAccess = () => {
           </div>
         </div>
         <p className={styles.problemBottomText}>
-          Most people save hundreds of things every month but rarely return to them. Memoria helps you organize and revisit what matters.
+          Most people save hundreds of things every month but rarely return to them. Saverites helps you organize and revisit what matters.
         </p>
       </section>
 
-      {/* SECTION 3 - WHAT IS MEMORIA */}
+      {/* SECTION 3 - WHAT IS SAVERITES */}
       <section ref={featuresRef} className={`${styles.section} animate-fade-up`}>
         <div className={styles.sectionTitle}>
           <h2 className="h2">One place for everything worth remembering.</h2>
@@ -208,13 +208,13 @@ const EarlyAccess = () => {
         <div className={styles.formSection}>
           <div className={styles.sectionTitle}>
             <h2 className="h2">Join Early Access</h2>
-            <p>We're currently testing Memoria with early users. Join the waitlist and help shape the future of the product.</p>
+            <p>We're currently testing Saverites with early users. Join the waitlist and help shape the future of the product.</p>
           </div>
 
           {submitStatus === 'success' ? (
             <div className={styles.successMessage}>
               <CheckCircle2 size={32} style={{ margin: '0 auto 12px' }} />
-              <h4 className="h4">Thank you for joining Memoria Early Access.</h4>
+              <h4 className="h4">Thank you for joining Saverites Early Access.</h4>
               <p>We'll keep you updated.</p>
             </div>
           ) : (
@@ -246,7 +246,7 @@ const EarlyAccess = () => {
               </div>
 
               <div className={styles.inputGroup}>
-                <label htmlFor="reason">Why would you use Memoria? (Optional)</label>
+                <label htmlFor="reason">Why would you use Saverites? (Optional)</label>
                 <textarea 
                   id="reason" 
                   name="reason" 

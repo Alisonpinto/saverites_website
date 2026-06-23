@@ -11,21 +11,21 @@ const PrivacyPolicy = () => {
     <section className={`container ${styles.pageSection}`}>
       <SEO 
         title="Privacy Policy"
-        description="Read the Privacy Policy for Memoria. Learn what information we collect, how we protect it, and your rights concerning your personal data."
+        description="Read the Privacy Policy for Saverites. Learn what information we collect, how we protect it, and your rights concerning your personal data."
         keywords="privacy policy, data collection, user privacy, data security, firebase privacy, GDPR compliance"
       />
       <div className={styles.pageHeader}>
-        <h1 className="h1">Privacy Policy – Memoria</h1>
+        <h1 className="h1">Privacy Policy – Saverites</h1>
         <p className="p-large">Last Updated: June 2026</p>
       </div>
       
       <div className={styles.content}>
         <p>
-          Welcome to Memoria, operated by ARKTECH DEVELOPERS.
+          Welcome to Saverites, operated by ARKTECH DEVELOPERS.
         </p>
 
         <p>
-          Memoria is a platform that allows users to save, organize, and share memories, bookmarks, links, images, videos, audio, documents, and other content from websites and applications. Users may also discover public content shared by other users.
+          Saverites is a platform that allows users to save, organize, and share memories, bookmarks, links, images, videos, audio, documents, and other content from websites and applications. Users may also discover public content shared by other users.
         </p>
 
         <h2>Information We Collect</h2>
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
 
         <h2>Children's Privacy</h2>
         <p>
-          Memoria is intended for users aged 13 years and above.
+          Saverites is intended for users aged 13 years and above.
         </p>
         <p>
           We do not knowingly collect information from children under 13 years of age.
@@ -107,7 +107,7 @@ const PrivacyPolicy = () => {
           ARKTECH DEVELOPERS
         </p>
         <p>
-          Email: <a href="mailto:memoriaapp2026@gmail.com">memoriaapp2026@gmail.com</a>
+          Email: <a href="mailto:saverites2026@gmail.com">saverites2026@gmail.com</a>
         </p>
       </div>
     </section>

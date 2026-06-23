@@ -28,7 +28,7 @@ const Contact = () => {
         body: JSON.stringify({
             ...formData,
             _captcha: "false", // Disables captcha
-            _subject: "New Contact Message - Memoria Website"
+            _subject: "New Contact Message - Saverites Website"
         })
       });
 
@@ -48,8 +48,8 @@ const Contact = () => {
     <section className={`container ${styles.pageSection}`}>
       <SEO 
         title="Contact Us"
-        description="Get in touch with the Memoria team. Send us support inquiries, feedback, or development proposals."
-        keywords="contact memoria, support email, contact developers, contact page"
+        description="Get in touch with the Saverites team. Send us support inquiries, feedback, or development proposals."
+        keywords="contact saverites, support email, contact developers, contact page"
       />
       <div className={styles.pageHeader}>
         <h1 className="h1">Contact Us</h1>

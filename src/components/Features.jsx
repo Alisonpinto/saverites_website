@@ -25,7 +25,7 @@ export default function Features() {
   return (
     <section id="features" className="features">
       <div className="features-container">
-        <h2 className="features-title">Why Choose Memoria?</h2>
+        <h2 className="features-title">Why Choose Saverites?</h2>
         <div className="features-grid">
           {features.map((feature) => (
             <div key={feature.id} className="feature-card">

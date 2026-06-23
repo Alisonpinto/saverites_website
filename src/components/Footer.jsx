@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Top Area */}
         <div className={styles.topArea}>
           <div className={styles.socials}>
-            <a href="https://www.instagram.com/officially_memoria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}><InstagramIcon /></a>
+            <a href="https://www.instagram.com/officially_saverites/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}><InstagramIcon /></a>
           </div>
           <a href="#download" className="btn btn-primary">
             Download App
@@ -34,12 +34,12 @@ const Footer = () => {
 
         {/* Bottom Area */}
         <div className={styles.bottomArea}>
-          <h2 className={styles.hugeText}>memoria</h2>
+          <h2 className={styles.hugeText}>saverites</h2>
         </div>
 
         {/* Copyright */}
         <div className={styles.copyright}>
-          <p>&copy; 2026 Memoria</p>
+          <p>&copy; 2026 Saverites</p>
           <p>Developed by Arktech Developers</p>
         </div>
       </div>

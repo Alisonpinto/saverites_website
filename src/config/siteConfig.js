@@ -1,5 +1,5 @@
 /**
- * Memoria Website Configuration File
+ * Saverites Website Configuration File
  * 
  * This file contains the configuration for the website, including SEO defaults
  * and details about the Android APK download.
@@ -8,18 +8,18 @@
 export const siteConfig = {
   // The base URL of the deployed website, used for sitemaps and canonical URLs.
   // Change this if you deploy the site on a different domain.
-  siteUrl: 'https://usememoria.com',
+  siteUrl: 'https://usesaverites.com',
   
   // Default SEO meta tags when a specific page doesn't override them.
-  defaultTitle: 'Memoria - Your Memories, Your Stories, Your Space',
+  defaultTitle: 'Saverites - Your Memories, Your Stories, Your Space',
   defaultDescription: 'A modern platform where users can save memories, important moments, stories, documents, and experiences forever.',
-  defaultKeywords: 'memoria, save memories, digital journal, secure notebook, document organizer, stories, android app',
+  defaultKeywords: 'saverites, save memories, digital journal, secure notebook, document organizer, stories, android app',
   
   // Twitter handle
-  twitterHandle: '@usememoria',
+  twitterHandle: '@usesaverites',
   
   // Support Email address
-  supportEmail: 'memoriaapp2026@gmail.com',
+  supportEmail: 'saverites2026@gmail.com',
 };
 
 /**
@@ -28,7 +28,7 @@ export const siteConfig = {
  * INSTRUCTIONS FOR UPDATING THE ANDROID APP:
  * ------------------------------------------
  * 1. Build your new APK file.
- * 2. Rename it to "memoria.apk" (or whatever filename you prefer).
+ * 2. Rename it to "saverites.apk" (or whatever filename you prefer).
  * 3. Place the APK file inside the "/public/downloads/" directory.
  *    (Full path: [project_root]/public/downloads/your_file.apk)
  * 4. Update the values in the "apkConfig" object below to match the new version.

@@ -24,7 +24,7 @@ const SEO = ({
 
   useEffect(() => {
     // 1. Set Page Title
-    const finalTitle = title ? `${title} | Memoria` : defaultTitle;
+    const finalTitle = title ? `${title} | Saverites` : defaultTitle;
     document.title = finalTitle;
 
     // Helper function to set or create meta tags
@@ -73,7 +73,7 @@ const SEO = ({
     setMetaTag('property', 'og:url', currentUrl);
     setMetaTag('property', 'og:type', ogType);
     setMetaTag('property', 'og:image', ogImage || defaultImage);
-    setMetaTag('property', 'og:site_name', 'Memoria');
+    setMetaTag('property', 'og:site_name', 'Saverites');
 
     // 7. Twitter Card Tags
     setMetaTag('name', 'twitter:card', 'summary_large_image');
@@ -88,14 +88,14 @@ const SEO = ({
     // 9. Apple Web App Meta Tags
     setMetaTag('name', 'apple-mobile-web-app-capable', 'yes');
     setMetaTag('name', 'apple-mobile-web-app-status-bar-style', 'black-translucent');
-    setMetaTag('name', 'apple-mobile-web-app-title', 'Memoria');
+    setMetaTag('name', 'apple-mobile-web-app-title', 'Saverites');
 
     // 10. Structured Data (Schema.org JSON-LD)
     let scriptTag = document.getElementById('jsonLdSchema');
     const finalSchema = schemaData || {
       '@context': 'https://schema.org',
       '@type': 'WebApplication',
-      'name': 'Memoria',
+      'name': 'Saverites',
       'url': siteUrl,
       'description': defaultDescription,
       'applicationCategory': 'MultimediaApplication',

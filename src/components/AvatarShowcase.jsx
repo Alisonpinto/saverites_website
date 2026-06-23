@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './AvatarShowcase.module.css';
 
 const AvatarShowcase = () => {
-  const [seed, setSeed] = useState('Memoria');
+  const [seed, setSeed] = useState('Saverites');
 
   return (
     <section className={`section ${styles.avatarSection}`}>
@@ -10,7 +10,7 @@ const AvatarShowcase = () => {
         <div className={styles.content}>
           <h2 className="h2 animate-fade-up">Your Unique Identity</h2>
           <p className="p-large animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Memoria uses beautiful, deterministically generated avatars. Type any name below to see it in action, matching exactly what you'll get in the app.
+            Saverites uses beautiful, deterministically generated avatars. Type any name below to see it in action, matching exactly what you'll get in the app.
           </p>
           
           <div className={`animate-fade-up ${styles.inputWrapper}`} style={{ animationDelay: '0.2s' }}>

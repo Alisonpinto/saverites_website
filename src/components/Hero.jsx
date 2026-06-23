@@ -11,7 +11,7 @@ const Hero = () => {
 
 
       <div className={`container ${styles.content}`}>
-        <h1 className={`h1 animate-fade-up ${styles.title}`}>memoria</h1>
+        <h1 className={`h1 animate-fade-up ${styles.title}`}>saverites</h1>
         <h2 className={`h3 animate-fade-up ${styles.subtitle}`} style={{ animationDelay: '0.1s' }}>
           Your Memories. Your Stories. Your Space.
         </h2>

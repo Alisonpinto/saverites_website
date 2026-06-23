@@ -11,24 +11,24 @@ import styles from './Support.module.css';
 
 const faqsData = [
   {
-    question: "What is Memoria?",
-    answer: "Memoria is a modern digital safe-keep platform developed by Arktech Developers. It allows you to save, organize, and catalog memories, text notes, bookmarks, high-res photos, documents, and audio recordings in a highly secure, private digital journal."
+    question: "What is Saverites?",
+    answer: "Saverites is a modern digital safe-keep platform developed by Arktech Developers. It allows you to save, organize, and catalog memories, text notes, bookmarks, high-res photos, documents, and audio recordings in a highly secure, private digital journal."
   },
   {
     question: "How do I download and install the Android app?",
     answer: "You can download the APK directly from the 'Download' section on our homepage. Once the APK is downloaded, tap on the file to install it. Ensure that you have enabled 'Install from Unknown Sources' in your Android security settings."
   },
   {
-    question: "Is my private data secure in Memoria?",
-    answer: "Yes, security is a core pillar of Memoria. Your private saved items (Self Save) are fully protected. We use industry-standard encryption protocols and secure database backends powered by Firebase. We do not sell or share your personal data with third-party advertisers."
+    question: "Is my private data secure in Saverites?",
+    answer: "Yes, security is a core pillar of Saverites. Your private saved items (Self Save) are fully protected. We use industry-standard encryption protocols and secure database backends powered by Firebase. We do not sell or share your personal data with third-party advertisers."
   },
   {
     question: "How do I delete my account and data permanently?",
-    answer: "You can request account deletion directly from the settings page inside the app. Alternatively, you can review our Account Deletion Policy and send an email request to our support team at memoriaapp2026@gmail.com, and we will purge your personal records within 30 days."
+    answer: "You can request account deletion directly from the settings page inside the app. Alternatively, you can review our Account Deletion Policy and send an email request to our support team at saverites2026@gmail.com, and we will purge your personal records within 30 days."
   },
   {
     question: "Can I access my memories when offline?",
-    answer: "Yes! The Memoria Android app features a local cache database. You can browse, edit, and create new memories while completely offline. The changes will queue up and sync automatically to the cloud once a stable internet connection is restored."
+    answer: "Yes! The Saverites Android app features a local cache database. You can browse, edit, and create new memories while completely offline. The changes will queue up and sync automatically to the cloud once a stable internet connection is restored."
   }
 ];
 
@@ -40,7 +40,7 @@ const categoriesData = [
   },
   {
     icon: <Compass size={24} />,
-    title: "Using Memoria",
+    title: "Using Saverites",
     items: ["Adding link bookmarks", "Saving custom media files", "Tagging and folders", "Configuring notification alerts"]
   },
   {
@@ -136,8 +136,8 @@ const Support = () => {
     <div className={styles.supportPage}>
       <SEO 
         title="Help & Support Center"
-        description="Need help with Memoria? Read FAQs, troubleshoot bugs, submit suggestions, and contact support."
-        keywords="memoria support, report a bug, help center, download app, account deletion, user FAQs"
+        description="Need help with Saverites? Read FAQs, troubleshoot bugs, submit suggestions, and contact support."
+        keywords="saverites support, report a bug, help center, download app, account deletion, user FAQs"
         schemaData={supportSchema}
       />
 
@@ -148,7 +148,7 @@ const Support = () => {
         <div className={`container ${styles.heroContainer}`}>
           <h1 className="h1 animate-fade-up">How can we help?</h1>
           <p className="p-large animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Find guides, troubleshoot errors, and get in touch with the Memoria team.
+            Find guides, troubleshoot errors, and get in touch with the Saverites team.
           </p>
           
           <div className={`${styles.searchBarContainer} animate-fade-up`} style={{ animationDelay: '0.2s' }}>
@@ -199,7 +199,7 @@ const Support = () => {
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2 className="h2">Frequently Asked Questions</h2>
-            <p className="p-large">Quick answers to the most common queries about Memoria.</p>
+            <p className="p-large">Quick answers to the most common queries about Saverites.</p>
           </div>
 
           <div className={styles.faqList}>
@@ -408,7 +408,7 @@ const Support = () => {
                         <Check size={36} />
                       </div>
                       <h3 className="h4">Thank You for Your Feedback!</h3>
-                      <p>Your suggestions help us build a better Memoria app. We read and value every submission!</p>
+                      <p>Your suggestions help us build a better Saverites app. We read and value every submission!</p>
                       <button 
                         onClick={() => setFeedSubmitted(false)}
                         className="btn btn-secondary"
@@ -462,7 +462,7 @@ const Support = () => {
                         </div>
 
                         <div className={styles.formGroup}>
-                          <label>Rate Memoria</label>
+                          <label>Rate Saverites</label>
                           <div className={styles.starRating}>
                             {[1, 2, 3, 4, 5].map((star) => (
                               <button 
@@ -488,7 +488,7 @@ const Support = () => {
                           id="feedMsg" 
                           rows="6" 
                           required
-                          placeholder="What would you like to see in Memoria? How can we make it better?"
+                          placeholder="What would you like to see in Saverites? How can we make it better?"
                           value={feedMsg}
                           onChange={(e) => setFeedMsg(e.target.value)}
                         ></textarea>

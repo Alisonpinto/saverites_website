@@ -1,5 +1,5 @@
 import { Brain, FileStack, Zap, ShieldCheck } from 'lucide-react';
-import styles from './WhyMemoria.module.css';
+import styles from './WhySaverites.module.css';
 
 const features = [
   {
@@ -24,12 +24,12 @@ const features = [
   }
 ];
 
-const WhyMemoria = () => {
+const WhySaverites = () => {
   return (
     <section className={`section ${styles.whySection}`}>
       <div className="container">
         <div className={styles.header}>
-          <h2 className="h2 animate-fade-up">Why Memoria</h2>
+          <h2 className="h2 animate-fade-up">Why Saverites</h2>
           <p className="p-large animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Built for those who value their digital legacy.
           </p>
@@ -55,4 +55,4 @@ const WhyMemoria = () => {
   );
 };
 
-export default WhyMemoria;
+export default WhySaverites;

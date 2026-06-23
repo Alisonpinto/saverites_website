@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className={`${styles.navbar} glass-effect`}>
         <div className={styles.logoContainer}>
           <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
-            memoria
+            saverites
           </Link>
         </div>
 

@@ -63,7 +63,7 @@ const DownloadSection = () => {
           
           <div className={`${styles.infoColumn} animate-fade-up`}>
             <span className={styles.badge}>Official Android App</span>
-            <h2 className="h2">Take memoria with you everywhere</h2>
+            <h2 className="h2">Take saverites with you everywhere</h2>
             <p className="p-large">
               Access your digital safe-keep directly from your smartphone. Save links, upload documents, record audio journals, and capture your precious life memories on the go.
             </p>
@@ -151,7 +151,7 @@ const DownloadSection = () => {
                       href={apkConfig.downloadPath} 
                       download={apkConfig.fileName}
                       className={`btn btn-primary ${styles.downloadButton}`}
-                      aria-label="Download Memoria Android APK"
+                      aria-label="Download Saverites Android APK"
                     >
                       <Download size={18} />
                       Download APK File
@@ -181,7 +181,7 @@ const DownloadSection = () => {
 
         {/* Coming Soon Section */}
         <div style={{ textAlign: 'center', padding: '4rem 2rem', maxWidth: '800px', margin: '0 auto' }}>
-          <h2 className="h2" style={{ marginBottom: '1rem' }}>Take memoria with you everywhere</h2>
+          <h2 className="h2" style={{ marginBottom: '1rem' }}>Take saverites with you everywhere</h2>
           <p className="p-large" style={{ marginBottom: '2rem' }}>
             Our Android and iOS applications are currently under development. Join the Early Access waitlist to be the first to know when they drop!
           </p>

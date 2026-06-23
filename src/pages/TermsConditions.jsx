@@ -11,7 +11,7 @@ const TermsConditions = () => {
     <section className={`container ${styles.pageSection}`}>
       <SEO 
         title="Terms & Conditions"
-        description="Read the Terms and Conditions for using Memoria. Learn about user eligibility, account registration, acceptable use, and intellectual property."
+        description="Read the Terms and Conditions for using Saverites. Learn about user eligibility, account registration, acceptable use, and intellectual property."
         keywords="terms and conditions, user agreement, legal policy, terms of service, developer contact"
       />
       <div className={styles.pageHeader}>
@@ -21,16 +21,16 @@ const TermsConditions = () => {
       
       <div className={styles.content}>
         <p>
-          Welcome to Memoria, operated by ARKTECH DEVELOPERS.
+          Welcome to Saverites, operated by ARKTECH DEVELOPERS.
         </p>
 
         <p>
-          By creating an account or using Memoria, you agree to these Terms and Conditions.
+          By creating an account or using Saverites, you agree to these Terms and Conditions.
         </p>
 
-        <h2>1. About Memoria</h2>
+        <h2>1. About Saverites</h2>
         <p>
-          Memoria is a platform that allows users to:
+          Saverites is a platform that allows users to:
         </p>
         <ul>
           <li>Save personal items, links, notes, documents, audio, images, videos, checklists, code snippets, and other content in their private Self Save section.</li>
@@ -41,7 +41,7 @@ const TermsConditions = () => {
 
         <h2>2. Eligibility</h2>
         <p>
-          You must be at least 13 years old to use Memoria.
+          You must be at least 13 years old to use Saverites.
         </p>
         <p>
           By using the platform, you confirm that you meet this requirement.
@@ -66,10 +66,10 @@ const TermsConditions = () => {
         </p>
         <h3>Public Posts</h3>
         <p>
-          Content submitted through the public posting feature may be visible to all Memoria users.
+          Content submitted through the public posting feature may be visible to all Saverites users.
         </p>
         <p>
-          By posting publicly, you grant Memoria permission to display and distribute that content within the platform.
+          By posting publicly, you grant Saverites permission to display and distribute that content within the platform.
         </p>
 
         <h2>5. Acceptable Use</h2>
@@ -107,12 +107,12 @@ const TermsConditions = () => {
           Users may interact with public posts through available features such as likes or reactions.
         </p>
         <p>
-          Memoria may add, remove, or modify interaction features at any time.
+          Saverites may add, remove, or modify interaction features at any time.
         </p>
 
         <h2>8. Content Moderation</h2>
         <p>
-          Memoria reserves the right to remove content that violates these Terms.
+          Saverites reserves the right to remove content that violates these Terms.
         </p>
         <p>
           Reported content may be reviewed and removed without prior notice.
@@ -133,7 +133,7 @@ const TermsConditions = () => {
 
         <h2>10. Disclaimer</h2>
         <p>
-          Memoria is provided "as is" without warranties of any kind.
+          Saverites is provided "as is" without warranties of any kind.
         </p>
         <p>
           We do not guarantee uninterrupted availability of the service.
@@ -149,7 +149,7 @@ const TermsConditions = () => {
           We may update these Terms at any time.
         </p>
         <p>
-          Continued use of Memoria after updates constitutes acceptance of the revised Terms.
+          Continued use of Saverites after updates constitutes acceptance of the revised Terms.
         </p>
 
         <h2>13. Contact</h2>
@@ -157,7 +157,7 @@ const TermsConditions = () => {
           ARKTECH DEVELOPERS
         </p>
         <p>
-          Email: <a href="mailto:memoriaapp2026@gmail.com">memoriaapp2026@gmail.com</a>
+          Email: <a href="mailto:saverites2026@gmail.com">saverites2026@gmail.com</a>
         </p>
       </div>
     </section>

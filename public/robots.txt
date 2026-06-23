@@ -1,7 +1,7 @@
-# Robots.txt file for Memoria Website
+# Robots.txt file for Saverites Website
 User-agent: *
 Allow: /
 
 # Host & Sitemap Location
-Host: https://usememoria.com
-Sitemap: https://usememoria.com/sitemap.xml
+Host: https://usesaverites.com
+Sitemap: https://usesaverites.com/sitemap.xml

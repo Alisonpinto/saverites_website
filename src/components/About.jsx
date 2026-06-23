@@ -5,14 +5,14 @@ export default function About() {
     <section className="about">
       <div className="about-container">
         <div className="about-content">
-          <h2 className="about-title">About Memoria</h2>
+          <h2 className="about-title">About Saverites</h2>
           <p className="about-description">
-            Memoria is a modern mobile application designed to help you preserve and share your most precious memories.
+            Saverites is a modern mobile application designed to help you preserve and share your most precious memories.
             Whether it's a perfect sunset, a meaningful conversation, or an important life milestone,
-            Memoria provides a secure, beautiful, and intuitive space to capture and relive these moments.
+            Saverites provides a secure, beautiful, and intuitive space to capture and relive these moments.
           </p>
           <p className="about-description">
-            We believe that memories are precious. That's why we've built Memoria with privacy,
+            We believe that memories are precious. That's why we've built Saverites with privacy,
             simplicity, and beauty at its core. Your memories belong to you, and you have complete
             control over how they're stored and shared.
           </p>
