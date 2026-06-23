@@ -24,7 +24,7 @@ const faqsData = [
   },
   {
     question: "How do I delete my account and data permanently?",
-    answer: "You can request account deletion directly from the settings page inside the app. Alternatively, you can review our Account Deletion Policy and send an email request to our support team at memoria2026@gmail.com, and we will purge your personal records within 30 days."
+    answer: "You can request account deletion directly from the settings page inside the app. Alternatively, you can review our Account Deletion Policy and send an email request to our support team at memoriaapp2026@gmail.com, and we will purge your personal records within 30 days."
   },
   {
     question: "Can I access my memories when offline?",

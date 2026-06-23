@@ -19,7 +19,7 @@ export const siteConfig = {
   twitterHandle: '@usememoria',
   
   // Support Email address
-  supportEmail: 'memoria2026@gmail.com',
+  supportEmail: 'memoriaapp2026@gmail.com',
 };
 
 /**

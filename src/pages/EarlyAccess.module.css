@@ -125,9 +125,11 @@
 /* WHAT IS MEMORIA SECTION */
 .featuresGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-md);
   width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .featureItem {
@@ -138,15 +140,36 @@
   padding: var(--spacing-lg);
   border: 1px solid var(--color-gray-200);
   border-radius: var(--border-radius-md);
-  transition: var(--transition-fast);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
 }
 
 .featureItem:hover {
   border-color: var(--color-black);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 
 .featureIcon {
   margin-bottom: var(--spacing-sm);
+  transition: transform var(--transition-fast);
+}
+
+.featureItem:hover .featureIcon {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* EARLY ACCESS FORM SECTION */

@@ -36,14 +36,18 @@ const AvatarShowcase = () => {
           {/* Floating examples */}
           <div className={styles.floatingAvatars}>
             {['Alex', 'Sam', 'Jordan', 'Taylor'].map((name, i) => (
-              <img 
+              <div
                 key={name}
-                src={`https://api.dicebear.com/9.x/micah/svg?seed=${name}&backgroundColor=transparent`}
-                alt={`${name} Avatar`}
-                className={`${styles.floatingAvatar} ${styles[`float${i+1}`]}`}
+                className={`${styles.floatingAvatarContainer} ${styles[`float${i+1}`]}`}
                 onClick={() => setSeed(name)}
                 title={`Click to try "${name}"`}
-              />
+              >
+                <img 
+                  src={`https://api.dicebear.com/9.x/micah/svg?seed=${name}&backgroundColor=transparent`}
+                  alt={`${name} Avatar`}
+                  className={styles.floatingAvatarImg}
+                />
+              </div>
             ))}
           </div>
         </div>

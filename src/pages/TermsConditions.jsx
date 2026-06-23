@@ -157,7 +157,7 @@ const TermsConditions = () => {
           ARKTECH DEVELOPERS
         </p>
         <p>
-          Email: <a href="mailto:memoria2026@gmail.com">memoria2026@gmail.com</a>
+          Email: <a href="mailto:memoriaapp2026@gmail.com">memoriaapp2026@gmail.com</a>
         </p>
       </div>
     </section>

@@ -33,7 +33,7 @@ const AccountDeletionPolicy = () => {
           If account deletion is unavailable within the application, users may request deletion by contacting:
         </p>
         <p>
-          Email: <a href="mailto:memoria2026@gmail.com">memoria2027alion@gmail.com</a>
+          Email: <a href="mailto:memoriaapp2026@gmail.com">memoriaapp2026@gmail.com</a>
         </p>
 
         <h2>What Happens After Deletion</h2>
@@ -57,7 +57,7 @@ const AccountDeletionPolicy = () => {
           For questions regarding account deletion, contact:
         </p>
         <p>
-          <a href="mailto:memoria2026@gmail.com">memoria2026@gmail.com</a>
+          <a href="mailto:memoriaapp2026@gmail.com">memoriaapp2026@gmail.com</a>
         </p>
         <p style={{ marginTop: 'var(--spacing-md)' }}>
           You can also submit a support ticket or request account deletion directly through our <Link to="/support" style={{ fontWeight: 600, textDecoration: 'underline' }}>Help & Support Center</Link>.

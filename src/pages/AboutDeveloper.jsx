@@ -21,49 +21,13 @@ const AboutDeveloper = () => {
 
       <div className={styles.content}>
         <p>
-          Memoria was built by{' '}
-          <a
-            href="https://github.com/alisonpinto"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.githubLink}
-          >
-            Alison Pinto
-          </a>
-          {', '}
-          <a
-            href="https://github.com/abhishekkulbainur"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.githubLink}
-          >
-            Abhishek Kulbainur
-          </a>
-          {', '}
-          <a
-            href="https://github.com/Beeb4Life"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.githubLink}
-          >
-            Aiden Rodrigues
-          </a>
-          {' and '}
-          <a
-            href="https://github.com/jawaanquizziz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.githubLink}
-          >
-            Jawaan Santh
-          </a>
-          {', a team passionate about creating technology that helps people save, organize, and rediscover valuable information effortlessly. Our goal is to make digital content management simple, accessible, and meaningful for everyone.'}
+          Memoria was built by <strong>Arktech Developers</strong>, a team passionate about creating technology that helps people save, organize, and rediscover valuable information effortlessly. Our goal is to make digital content management simple, accessible, and meaningful for everyone.
         </p>
 
         <div className={styles.emailSection}>
           <span className={styles.emailTitle}>Get in Touch</span>
-          <a href="mailto:memoria@gmail.com" className={styles.emailLink}>
-            memoria@gmail.com
+          <a href="mailto:memoriaapp2026@gmail.com" className={styles.emailLink}>
+            memoriaapp2026@gmail.com
           </a>
         </div>
       </div>
