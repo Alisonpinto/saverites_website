@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Top Area */}
         <div className={styles.topArea}>
           <div className={styles.socials}>
-            <a href="https://www.instagram.com/officially_saverites/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}><InstagramIcon /></a>
+            <a href="https://www.instagram.com/saverites" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}><InstagramIcon /></a>
           </div>
           <a href="#download" className="btn btn-primary">
             Download App

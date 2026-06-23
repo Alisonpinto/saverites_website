@@ -20,7 +20,7 @@ const SEO = ({
   const currentUrl = canonicalUrl || `${siteUrl}${location.pathname}`;
   const defaultDescription = siteConfig.defaultDescription;
   const defaultTitle = siteConfig.defaultTitle;
-  const defaultImage = `${siteUrl}/favicon.svg`; // Fallback image
+  const defaultImage = `${siteUrl}/favicon.png`; // Fallback image
 
   useEffect(() => {
     // 1. Set Page Title

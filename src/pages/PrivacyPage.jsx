@@ -9,22 +9,22 @@ const PrivacyPolicy = () => {
 
   return (
     <section className={`container ${styles.pageSection}`}>
-      <SEO 
+      <SEO
         title="Privacy Policy"
         description="Read the Privacy Policy for Saverites. Learn what information we collect, how we protect it, and your rights concerning your personal data."
         keywords="privacy policy, data collection, user privacy, data security, firebase privacy, GDPR compliance"
       />
       <div className={styles.pageHeader}>
-        <h1 className="h1">Privacy Policy – Saverites</h1>
+        <h1 className="h1">Privacy Policy – saverites</h1>
         <p className="p-large">Last Updated: June 2026</p>
       </div>
-      
+
       <div className={styles.content}>
         <p>
-          Welcome to Saverites, operated by ARKTECH DEVELOPERS.
+          Welcome to saverites, operated by ARKTECH DEVELOPERS.
         </p>
 
-        <p>
+        <p> 
           Saverites is a platform that allows users to save, organize, and share memories, bookmarks, links, images, videos, audio, documents, and other content from websites and applications. Users may also discover public content shared by other users.
         </p>
 
