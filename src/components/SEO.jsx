@@ -4,7 +4,7 @@ import { siteConfig } from '../config/siteConfig';
 
 /**
  * SEO Component to handle dynamic page metadata injection.
- * Works seamlessly in client-side React 199 without peer-dependency issues.
+ * Works seamlessly in client-side React 19 without peer-dependency issues.
  */
 const SEO = ({ 
   title, 
