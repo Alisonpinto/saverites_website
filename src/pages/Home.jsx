@@ -43,23 +43,35 @@ const Home = () => {
       <Hero />
       
       <FeatureSection 
-        title="Relive Every Memory"
-        description="Browse memories, posts, stories, and important life moments all in one beautiful feed."
+        title="The Private Lock"
+        description="Keep your sensitive documents and private memories strictly confidential. Secure them behind a biometric lock or password, ensuring only you have access."
         type="phone"
         reverse={false}
       />
       
       <FeatureSection 
-        title="Save Everything"
-        description="A secure space to store all your digital assets."
+        title="Social Feed & Discovery"
+        description="Want to share your discoveries? Post your saved items to our vibrant social feed. Let others browse, engage, and find inspiration from what you share."
         listItems={[
-          "Documents & PDFs",
-          "Voice Notes",
-          "High-res Photos",
-          "Important life milestones",
-          "Secured personal information"
+          "Share curated collections",
+          "Discover new products & ideas",
+          "Engage with the community"
         ]}
+        type="social_feed"
+        reverse={true}
+      />
+
+      <FeatureSection 
+        title="Save Everything & Anything"
+        description="A secure space to store all your digital assets, from PDFs and photos to voice notes and videos."
         type="animation"
+        reverse={false}
+      />
+
+      <FeatureSection 
+        title="Smart Reminders"
+        description="Never forget what you saved. Whether it's a product, an article, or a memory, Saverites gently reminds you of your saved items a week or a month later."
+        type="notification"
         reverse={true}
       />
 

@@ -1,0 +1,222 @@
+.phoneContainer {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 640px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background-color: #1e1e1e; /* Dark theme */
+  padding: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.phoneScreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  background-color: #2a2a2a;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px 12px;
+  background-color: #2a2a2a;
+  z-index: 10;
+}
+
+.menuIcon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  width: 24px;
+}
+
+.menuLine {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.notificationDot {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff4757;
+  border-radius: 50%;
+}
+
+.searchBar {
+  flex-grow: 1;
+  margin: 0 16px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #444;
+}
+
+.searchIcon {
+  width: 14px;
+  height: 14px;
+  color: #888;
+}
+
+.searchText {
+  color: #666;
+  font-size: 12px;
+}
+
+.galleryIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+/* Feed */
+.feedWrapper {
+  flex-grow: 1;
+  overflow: hidden; /* Hide scrollbar, animated via JS */
+  padding: 0 12px;
+  mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+}
+
+.feedContent {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.masonryColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+/* Card */
+.card {
+  background-color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  background-color: #444;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bookmarkWrapper {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmarkIcon {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+}
+
+.actionBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #333;
+}
+
+.actionsLeft {
+  display: flex;
+  gap: 12px;
+}
+
+.actionBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.actionBtn:hover {
+  color: #fff;
+}
+
+.actionIcon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Bottom Nav */
+.bottomNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+  background-color: #2a2a2a;
+  border-top: 1px solid #333;
+  z-index: 10;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.fabBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fce883; /* Yellow like the image */
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(252, 232, 131, 0.3);
+  cursor: pointer;
+}
+
+.fabBtn svg {
+  width: 24px;
+  height: 24px;
+}

@@ -285,7 +285,7 @@ const EarlyAccess = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Jane Doe"
+                  placeholder="Enter your full name"
                   disabled={isSubmitting}
                 />
               </div>
@@ -298,7 +298,7 @@ const EarlyAccess = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="jane@example.com"
+                  placeholder="Enter your email address"
                   disabled={isSubmitting}
                 />
               </div>

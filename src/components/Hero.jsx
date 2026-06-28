@@ -11,12 +11,12 @@ const Hero = () => {
 
 
       <div className={`container ${styles.content}`}>
-        <h1 className={`h1 animate-fade-up ${styles.title}`}>saverites</h1>
+        <h1 className={`h1 animate-fade-up ${styles.title}`}>One Platform for Everything You Save</h1>
         <h2 className={`h3 animate-fade-up ${styles.subtitle}`} style={{ animationDelay: '0.1s' }}>
-          Your Memories. Your Stories. Your Space.
+          Your digital life, finally organized.
         </h2>
         <p className={`p-large animate-fade-up ${styles.description}`} style={{ animationDelay: '0.2s' }}>
-          A modern platform where users can save memories, important moments, stories, documents, and experiences forever.
+          Stop scattering your important documents, links, and memories across multiple apps. Saverites is the ultimate space to secure what's private and share what's inspiring.
         </p>
         
         <div className={`animate-fade-up ${styles.buttonGroup}`} style={{ animationDelay: '0.3s' }}>

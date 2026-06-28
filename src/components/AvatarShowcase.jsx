@@ -10,7 +10,7 @@ const AvatarShowcase = () => {
         <div className={styles.content}>
           <h2 className="h2 animate-fade-up">Your Unique Identity</h2>
           <p className="p-large animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Saverites uses beautiful, deterministically generated avatars. Type any name below to see it in action, matching exactly what you'll get in the app.
+            Saverites uses beautiful, deterministically generated avatars. Type <strong><u>your name</u></strong> below to see it in action, matching exactly what you'll get in the app.
           </p>
           
           <div className={`animate-fade-up ${styles.inputWrapper}`} style={{ animationDelay: '0.2s' }}>

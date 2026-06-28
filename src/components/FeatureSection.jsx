@@ -1,6 +1,8 @@
 import styles from './FeatureSection.module.css';
 import SaveAnimation from './SaveAnimation';
 import PhoneSplash from './PhoneSplash';
+import SocialFeedAnimation from './SocialFeedAnimation';
+import NotificationAnimation from './NotificationAnimation';
 
 const FeatureSection = ({ title, description, reverse, type, listItems }) => {
   return (
@@ -17,6 +19,10 @@ const FeatureSection = ({ title, description, reverse, type, listItems }) => {
             </div>
           ) : type === 'animation' ? (
             <SaveAnimation />
+          ) : type === 'social_feed' ? (
+            <SocialFeedAnimation />
+          ) : type === 'notification' ? (
+            <NotificationAnimation />
           ) : (
             <div className={styles.videoMockup}>
               <video 
